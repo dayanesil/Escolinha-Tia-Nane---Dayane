@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">      
+        
+        <title>Escolinha Tia Nane - Contato</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="contato-1.css">
+    
+    </head>
+    <body>
+        <header>
+            <div class="cabecalho">
+               
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="alunos.html">Alunos</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <p>Os campos com * são obrigatórios!</p>
+                <label for="nomecompleto">Nome Completo*</label>
+                <input class="input-padrao" type="text" id="nomecompleto" required
+                placeholder="Nome e Sobrenome">
+
+                <label for="email">Email*</label>
+                <input class="input-padrao" type="email" id="email" required
+                placeholder="seuemail@gmail.com">
+
+                <label for="telefone">Telefone*</label>
+                <input class="input-padrao" type="tel" id="telefone" required
+                placeholder="(xx) xxxxx-xxxx">
+
+                <label for="mesagem">Mensagem</label>
+                <textarea cols="70" rows="5" id="mensagem"
+                placeholder="Ex.: Gostaria de realizar uma visita a escola terça."></textarea>
+
+                <fieldset>
+                    <legend>Em qual horário prefere seu atendimento?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email">
+                        Email
+                    </label>
+                    
+                    <label for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                        Telefone
+                    </label>
+
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                        WhatsApp
+                    </label>
+                </fieldset>
+
+                <label class="checkbox">Gostaria de receber nossas novidades por email?
+                    <input type="checkbox" checked>
+                </label>
+
+                <input class="enviar" type="submit" value="Enviar">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>De segunda à sexta</td>
+                        <td>Das 8h às 17h</td>
+                    </tr>
+                   
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Esperamos por você!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        
+        <footer>
+            <p class="copyright">&copy; Copyright Escolinha Tia Nane - 2023</p>
+        </footer>
+    </body>
+</htm
